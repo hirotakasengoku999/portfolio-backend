@@ -61,6 +61,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
+    "https://portfolio-front-psi.vercel.app"
 ]
 
 REST_FRAMEWORK = {
