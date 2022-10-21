@@ -10,7 +10,7 @@ services:
     plan: free
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn project.wsgi:application"
+    startCommand: "gunicorn project .wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:

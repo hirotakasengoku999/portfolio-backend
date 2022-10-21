@@ -25,6 +25,7 @@ class Service(models.Model):
     title = models.CharField(max_length=50)
     info = models.CharField(max_length=100)
     url = models.URLField()
+    img = models.ImageField(upload_to='images', verbose_name='イメージ画像')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
